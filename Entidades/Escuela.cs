@@ -52,7 +52,6 @@ namespace CoreEscuela.Entidades
         {
             Nombre = nombre;
             AnoDeCreacion = year;
-            //TiposUniversidad = tipoUni;
             Pais=pais;
             Ciudad = ciudad;
         }

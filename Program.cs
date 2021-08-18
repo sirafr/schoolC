@@ -19,8 +19,6 @@ namespace Etapa1
                         new Curso{Nombre = "301", Jornada = TiposJornada.Manana.ToString()}
             };
 
-            // Agregando mas cursos con Add(), AddRange()
-
             escuela.Cursos.Add(new Curso{Nombre="102",Jornada=TiposJornada.Tarde.ToString()});
             escuela.Cursos.Add(new Curso{Nombre="202",Jornada=TiposJornada.Tarde.ToString()});
 
@@ -30,21 +28,28 @@ namespace Etapa1
                 new Curso() {Nombre = "502", Jornada=TiposJornada.Tarde.ToString()}
             };
 
-            // Quitando los datos a la coleccion
-            // Quita todos los elementos de la app
-            //otraColeccion.Clear();
 
-            // Agregando los datos a la coleccion
+            Curso tmp = new Curso{Nombre = "101-Vacacional", Jornada = TiposJornada.Noche.ToString()};
             escuela.Cursos.AddRange(otraColeccion);
+            escuela.Cursos.Add(tmp);
+            ImprimirCursosEscuela(escuela);
+            // Con el hashcode
+            //WriteLine("\n Curso.Hash"+tmp.GetHashCode());
 
             // Remover normalmente
-            escuela.Cursos.Remove();
+            //escuela.Cursos.Remove(tmp);
 
+            // Delegado: escpecifica que parametro de entrada y salida debe tener.
+            Predicate<Curso> miAlgoritmo=Predicate; 
+            escuela.Cursos.RemoveAll(miAlgoritmo);
 
-          
-
+            WriteLine("================");
             ImprimirCursosEscuela(escuela);
+        }
 
+        private static bool Predicate(Curso curobj)
+        {
+            return curobj.Nombre == "301";
         }
 
         private static void ImprimirCursosEscuela(Escuela escuela)
