@@ -1,5 +1,6 @@
 ﻿using System;
 using CoreEscuela.Entidades;
+using System.Collections.Generic;
 using static System.Console;
 
 namespace Etapa1
@@ -11,41 +12,38 @@ namespace Etapa1
             var escuela = new Escuela("Platzi Academy", 2020, TiposEscuela.Secundaria, pais: "Ecuador", ciudad: "Quito");
             var sanpancho = new Universidad("USFQ", 1992, TiposUniversidad.Publica, "Ecuador", "Cumbaya");
 
-            escuela.Cursos = new Curso[]
-            {
-                new Curso(){Nombre = "101"},
-                new Curso(){Nombre = "201"},
-                new Curso(){Nombre = "301"}
+
+            escuela.Cursos = new List<Curso>(){
+                        new Curso(){ Nombre = "101", Jornada = TiposJornada.Manana.ToString() },
+                        new Curso() {Nombre = "201", Jornada = TiposJornada.Manana.ToString()},
+                        new Curso{Nombre = "301", Jornada = TiposJornada.Manana.ToString()}
             };
 
+            // Agregando mas cursos con Add(), AddRange()
+
+            escuela.Cursos.Add(new Curso{Nombre="102",Jornada=TiposJornada.Tarde.ToString()});
+            escuela.Cursos.Add(new Curso{Nombre="202",Jornada=TiposJornada.Tarde.ToString()});
+
+            var otraColeccion = new List<Curso>(){
+                new Curso() {Nombre = "401", Jornada=TiposJornada.Manana.ToString()},
+                new Curso() {Nombre = "501", Jornada=TiposJornada.Manana.ToString()},
+                new Curso() {Nombre = "502", Jornada=TiposJornada.Tarde.ToString()}
+            };
+
+            // Quitando los datos a la coleccion
+            // Quita todos los elementos de la app
+            //otraColeccion.Clear();
+
+            // Agregando los datos a la coleccion
+            escuela.Cursos.AddRange(otraColeccion);
+
+            // Remover normalmente
+            escuela.Cursos.Remove();
+
+
+          
+
             ImprimirCursosEscuela(escuela);
-
-            bool rta = 10 == 10;
-            int cantidad = 10;
-            if (rta==true)//true
-            {
-                WriteLine("Condicion 1");
-            }
-            else if (cantidad > 15)
-            {
-                WriteLine("Condicion 2");
-            }
-            else
-            {
-                WriteLine("No se cumplio la condicion");
-            }
-
-            if(cantidad > 5 && rta != false)
-            {   
-                WriteLine("Se cumplio la condicion #4");
-            }
-
-            cantidad = 10;
-
-            if((cantidad>5 || rta) && (cantidad % 5 == 0))
-            {
-                WriteLine("Se cumplio condicion #5");
-            }
 
         }
 
@@ -72,7 +70,7 @@ namespace Etapa1
             while (contador < arregloCursos.Length)
             {
                 Console.WriteLine($"Nombra {arregloCursos[contador].Nombre}, Id {arregloCursos[contador].UniqueId}");
-                contador++; // contador = contador+1
+                contador++;
             }
         }
 
