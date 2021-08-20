@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace CoreEscuela.Entidades
 {
-    class Escuela
+    public class Escuela
     {
         string nombre;
         public string Nombre
@@ -35,30 +35,6 @@ namespace CoreEscuela.Entidades
         public override string ToString()
         {
             return $"\"Nombre\": {Nombre}, Tipo: {TipoEscuela} \n Pais: {Pais} Ciudad: {Ciudad}"; 
-        }
-
-    }
-
-    class Universidad 
-    {
-        public string Nombre {get;set;}
-        public int AnoDeCreacion{get;set;}
-
-        public string Pais {get; set;}
-        public string Ciudad {get;set;}
-        public TiposUniversidad tipoU{get; set;}
-
-        public Universidad(string nombre,int year,TiposUniversidad tipoUni, string pais="", string ciudad="")
-        {
-            Nombre = nombre;
-            AnoDeCreacion = year;
-            Pais=pais;
-            Ciudad = ciudad;
-        }
-
-        public override string ToString()
-        {
-            return $"Universidad: {Nombre}, Tipo: {tipoU}, \n Pais:  {Pais}, Ciudad: {Ciudad}";
         }
     }
 }

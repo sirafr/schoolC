@@ -11,3 +11,16 @@ C:\Users\andre\Desktop\shortcuts\cSharp\Proyecto\Etapa1\obj\Debug\netcoreapp3.1\
 C:\Users\andre\Desktop\shortcuts\cSharp\Proyecto\Etapa1\obj\Debug\netcoreapp3.1\Etapa1.dll
 C:\Users\andre\Desktop\shortcuts\cSharp\Proyecto\Etapa1\obj\Debug\netcoreapp3.1\Etapa1.pdb
 C:\Users\andre\Desktop\shortcuts\cSharp\Proyecto\Etapa1\obj\Debug\netcoreapp3.1\Etapa1.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\sirafr\pltz\cSharp\schoolC\obj\Debug\netcoreapp3.1\Etapa1.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\sirafr\pltz\cSharp\schoolC\obj\Debug\netcoreapp3.1\Etapa1.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\sirafr\pltz\cSharp\schoolC\obj\Debug\netcoreapp3.1\Etapa1.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\sirafr\pltz\cSharp\schoolC\obj\Debug\netcoreapp3.1\Etapa1.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\sirafr\pltz\cSharp\schoolC\obj\Debug\netcoreapp3.1\Etapa1.dll
+C:\Users\Usuario\Desktop\sirafr\pltz\cSharp\schoolC\obj\Debug\netcoreapp3.1\Etapa1.pdb
+C:\Users\Usuario\Desktop\sirafr\pltz\cSharp\schoolC\bin\Debug\netcoreapp3.1\Etapa1.exe
+C:\Users\Usuario\Desktop\sirafr\pltz\cSharp\schoolC\bin\Debug\netcoreapp3.1\Etapa1.deps.json
+C:\Users\Usuario\Desktop\sirafr\pltz\cSharp\schoolC\bin\Debug\netcoreapp3.1\Etapa1.runtimeconfig.json
+C:\Users\Usuario\Desktop\sirafr\pltz\cSharp\schoolC\bin\Debug\netcoreapp3.1\Etapa1.runtimeconfig.dev.json
+C:\Users\Usuario\Desktop\sirafr\pltz\cSharp\schoolC\bin\Debug\netcoreapp3.1\Etapa1.dll
+C:\Users\Usuario\Desktop\sirafr\pltz\cSharp\schoolC\bin\Debug\netcoreapp3.1\Etapa1.pdb
+C:\Users\Usuario\Desktop\sirafr\pltz\cSharp\schoolC\obj\Debug\netcoreapp3.1\Etapa1.genruntimeconfig.cache
