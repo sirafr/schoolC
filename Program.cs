@@ -19,8 +19,8 @@ namespace Etapa1
                         new Curso{Nombre = "301", Jornada = TiposJornada.Manana.ToString()}
             };
 
-            escuela.Cursos.Add(new Curso{Nombre="102",Jornada=TiposJornada.Tarde.ToString()});
-            escuela.Cursos.Add(new Curso{Nombre="202",Jornada=TiposJornada.Tarde.ToString()});
+            escuela.Cursos.Add(new Curso { Nombre = "102", Jornada = TiposJornada.Tarde.ToString() });
+            escuela.Cursos.Add(new Curso { Nombre = "202", Jornada = TiposJornada.Tarde.ToString() });
 
             var otraColeccion = new List<Curso>(){
                 new Curso() {Nombre = "401", Jornada=TiposJornada.Manana.ToString()},
@@ -29,19 +29,15 @@ namespace Etapa1
             };
 
 
-            Curso tmp = new Curso{Nombre = "101-Vacacional", Jornada = TiposJornada.Noche.ToString()};
+            Curso tmp = new Curso { Nombre = "101-Vacacional", Jornada = TiposJornada.Noche.ToString() };
             escuela.Cursos.AddRange(otraColeccion);
             escuela.Cursos.Add(tmp);
             ImprimirCursosEscuela(escuela);
-            // Con el hashcode
-            //WriteLine("\n Curso.Hash"+tmp.GetHashCode());
 
-            // Remover normalmente
-            //escuela.Cursos.Remove(tmp);
-
-            // Delegado: escpecifica que parametro de entrada y salida debe tener.
-            Predicate<Curso> miAlgoritmo=Predicate; 
-            escuela.Cursos.RemoveAll(miAlgoritmo);
+            escuela.Cursos.RemoveAll(delegate (Curso cur)
+            {
+                return cur.Nombre == "301";
+            });
 
             WriteLine("================");
             ImprimirCursosEscuela(escuela);
@@ -85,7 +81,6 @@ namespace Etapa1
             do
             {
                 Console.WriteLine($"Nombra {arregloCursos[contador].Nombre}, Id {arregloCursos[contador].UniqueId}");
-                //contador++; // contador = contador+1
             } while (++contador < arregloCursos.Length);
 
         }
@@ -95,7 +90,6 @@ namespace Etapa1
             for (int i = 0; i < arregloCursos.Length; i++)
             {
                 Console.WriteLine($"Nombra {arregloCursos[i].Nombre}, Id {arregloCursos[i].UniqueId}");
-                //contador++; // contador = contador+1
             }
 
         }
