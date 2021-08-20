@@ -25,7 +25,7 @@ namespace Etapa1
             var otraColeccion = new List<Curso>(){
                 new Curso() {Nombre = "401", Jornada=TiposJornada.Manana.ToString()},
                 new Curso() {Nombre = "501", Jornada=TiposJornada.Manana.ToString()},
-                new Curso() {Nombre = "502", Jornada=TiposJornada.Tarde.ToString()}
+                new Curso() {Nombre = "501", Jornada=TiposJornada.Tarde.ToString()}
             };
 
 
@@ -38,6 +38,11 @@ namespace Etapa1
             {
                 return cur.Nombre == "301";
             });
+
+            // Expresiones lambda (mas compacta) con operador AND 
+
+            escuela.Cursos.RemoveAll((Curso cur)=> cur.Nombre == "501" && cur.Jornada == TiposJornada.Manana.ToString());
+
 
             WriteLine("================");
             ImprimirCursosEscuela(escuela);
