@@ -2,6 +2,7 @@
 using CoreEscuela.Entidades;
 using System.Collections.Generic;
 using static System.Console;
+using CoreEscuela.Util;
 
 namespace CoreEscuela
 {
@@ -11,7 +12,8 @@ namespace CoreEscuela
         {
             var engine = new EscuelaEngine();
             engine.Inicializar();
-            WriteLine("=================");
+            Printer.WriteTitle("WELCOME TO THE SCHOOL");
+            Printer.Beep(1000,cantidad:10);
             ImprimirCursosEscuela(engine.Escuela);
 
         }
@@ -19,9 +21,8 @@ namespace CoreEscuela
 
         private static void ImprimirCursosEscuela(Escuela escuela)
         {
-            WriteLine("********************");
-            WriteLine("Cursos de la escuela");
-            WriteLine("*******************");
+
+            Printer.WriteTitle("CURSOS DE LA ESCUELA");
 
 
             if (escuela?.Cursos != null)
