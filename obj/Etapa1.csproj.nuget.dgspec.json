@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andre\\Desktop\\shortcuts\\cSharp\\Proyecto\\Etapa1\\Etapa1.csproj": {}
+    "C:\\Users\\andre\\Desktop\\shortcuts\\cSharp\\Proyecto\\schoolC\\Etapa1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andre\\Desktop\\shortcuts\\cSharp\\Proyecto\\Etapa1\\Etapa1.csproj": {
+    "C:\\Users\\andre\\Desktop\\shortcuts\\cSharp\\Proyecto\\schoolC\\Etapa1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\Desktop\\shortcuts\\cSharp\\Proyecto\\Etapa1\\Etapa1.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\Desktop\\shortcuts\\cSharp\\Proyecto\\schoolC\\Etapa1.csproj",
         "projectName": "Etapa1",
-        "projectPath": "C:\\Users\\andre\\Desktop\\shortcuts\\cSharp\\Proyecto\\Etapa1\\Etapa1.csproj",
+        "projectPath": "C:\\Users\\andre\\Desktop\\shortcuts\\cSharp\\Proyecto\\schoolC\\Etapa1.csproj",
         "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\Desktop\\shortcuts\\cSharp\\Proyecto\\Etapa1\\obj\\",
+        "outputPath": "C:\\Users\\andre\\Desktop\\shortcuts\\cSharp\\Proyecto\\schoolC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config"
